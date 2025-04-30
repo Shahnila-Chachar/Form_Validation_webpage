@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Form Validation</title>
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+      <i class="fa-solid fa-paper-plane"></i>
+      
+      <div class="inputGroup">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="myName" onkeyup="validateName()">
+        <span id="name_Error"></span>
+      </div>
+      
+      <div class="inputGroup">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="Enter your number" id="myPhone" onkeyup="validatePhone()">
+        <span id="phone_Error"></span>
+      </div>
+      
+      
+      <div class="inputGroup">
+        <label>Email Id</label>
+        <input type="text" placeholder="Enter your email" id="myEmail" onkeyup="validateEmail()">
+        <span id="email_Error"></span>
+      </div>
+      
+      
+      <div class="inputGroup">
+        <label>Password</label>
+        <input type="text" placeholder="Enter your password" id="myPassword" onkeyup="validatePassword()">
+        <span id="password_Error"></span>
+      </div>
+      
+      
+     <div class="inputGroup">
+        <label>Your Message</label>
+       <textarea rows="3" placeholder="Enter your message" id="myMessage" onkeyup="validateMessage()"></textarea>
+       <span id="message_Error"></span>
+     </div>
+      
+      <button onclick="return validateForm()">Submit</button>
+      <span id="submit_Error"></span>
+    </form>
+  </div>
+  
+  
+  
+<script src="script.js"></script>
+</body>
+</html>
